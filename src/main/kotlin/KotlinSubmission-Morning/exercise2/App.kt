@@ -14,7 +14,9 @@ fun main() {
             evenNumber += i
         }
     }
+    println("===================== EVEN NUMBER =========================")
     println(evenNumber)
+    println("===========================================================\n")
 
 
     /** Latihan 2 Map
@@ -36,6 +38,7 @@ fun main() {
     - "It's {$monthNow} now, I was born in {$birthMonth}"
      */
     // Buat di bawah sini
+    println("==================== MONTH IN A YEAR ======================")
     val monthMap = mapOf("Jan" to "January", "Feb" to "February",
         "Mar" to "March", "Apr" to "April", "May" to "May",
         "Jun" to "June", "Jul" to "July", "Aug" to "August",
@@ -45,8 +48,11 @@ fun main() {
     monthMap.forEach{ (key, value) ->
         println("$key -> $value")
     }
+    println("===========================================================\n")
 
+    println("====================== ABOUT ME ===========================")
     val monthNow = monthMap["Nov"]
     val birthMonth = monthMap["Jan"]
     println("It's $monthNow now, I was born in $birthMonth")
+    println("===========================================================")
 }

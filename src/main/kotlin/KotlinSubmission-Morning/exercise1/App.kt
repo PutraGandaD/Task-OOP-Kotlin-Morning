@@ -33,12 +33,12 @@ fun groupDetail(groupId: String, groupMember: List<Any>, session: String): Any {
     print("\n")
     println("============ GROUP DETAIL ============")
     println("Group number = " + groupId)
-    println("Group member = ")
+    println("Session = " + session)
+    println("Group member (excluding mentors) = ")
     for (member in groupMember) {
         i++
         println("$i. " + member)
     }
-    println("Session = " + session)
     println("======================================")
     return ""
 }
@@ -63,7 +63,16 @@ fun myTeam(): List<Any> {
  */
 fun totalMember(): Int {
     val mentor = arrayOf<String>("Kak Kelvin", "Kak Shania", "Kak Iffan")
-    val countOfGroup = arrayOf<String>("Putra Ganda", "Whatever")
+    val countOfGroup = arrayOf<String>("Putra Ganda Dewata",
+        "Dewangga Nanda Arjuna",
+        "Novia Indah Ramadhani",
+        "Sugini Injani",
+        "Abdul malik Dzakwan",
+        "Alexandro Bilbilson Deminggus",
+        "Mohammad Faiz Nurohman",
+        "Nabilah Rahmah Hasibuan",
+        "Revon Anandiya",
+        "Vina Dhamayanti")
     val totalCount = mentor.size + countOfGroup.size
 
     return totalCount
@@ -85,6 +94,15 @@ fun main() {
      *  Ubah nilai argumen-argumen dari fungsi groupDetail di bawah ini sesuai dengan data group kamu
      *
      */
-    groupDetail("13", listOf("Putra", "Anna"), "Morning")
+    groupDetail("13", listOf("Putra Ganda Dewata",
+        "Dewangga Nanda Arjuna",
+        "Novia Indah Ramadhani",
+        "Sugini Injani",
+        "Abdul malik Dzakwan",
+        "Alexandro Bilbilson Deminggus",
+        "Mohammad Faiz Nurohman",
+        "Nabilah Rahmah Hasibuan",
+        "Revon Anandiya",
+        "Vina Dhamayanti"), "Morning")
 
 }
