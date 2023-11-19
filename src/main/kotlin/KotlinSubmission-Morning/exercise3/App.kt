@@ -15,7 +15,7 @@ fun main() {
     - Isi variabel result dengan nilai: 'Anda mendapatkan nilai E.'
      */
     // Buat di bawah sini
-    var score: Int = 59
+    var score: Int = 65
 
     if (score < 60) {
         println("Anda mendapatkan nilai E.")
@@ -27,5 +27,23 @@ fun main() {
         println("Anda mendapatkan nilai B.")
     } else {
         println("Selamat! Anda mendapatkan nilai A.")
+    }
+
+    when {
+        score < 60 -> {
+            println("Anda mendapatkan nilai E.")
+        }
+        score < 69 -> {
+            println("Anda mendapatkan nilai D.")
+        }
+        score < 79 -> {
+            println("Anda mendapatkan nilai C.")
+        }
+        score < 89 -> {
+            println("Anda mendapatkan nilai B.")
+        }
+        else -> {
+            println("Selamat! Anda mendapatkan nilai A.")
+        }
     }
 }
